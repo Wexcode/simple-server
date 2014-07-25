@@ -1,0 +1,7 @@
+doctype html
+head
+  title Sessions
+body
+  h1 Sessions
+  p Current session: #{sid || 'None'}
+  pre= JSON.stringify(sessions, null, 2)
